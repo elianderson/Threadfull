@@ -21,7 +21,7 @@
   </div>
   <div class="field">
     <%= f.label :category %><br />
-    <%= select(:product, :category, @product.getCategories) %>
+    <%= select(:product, :category, Product.getCategories) %>
   </div>
   <div class="field">
     <%= f.label :desc_short %><br />

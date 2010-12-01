@@ -1,11 +1,9 @@
-<h1>Public#index</h1>
-<p>Find me in app/views/public/index.html.erb</p>
+<h1>Threadfull</h1>
 
-
-<%= debug(@categories)%>
 <% @categories.each do |cat| %>
   <h2><%= cat %></h3>
-  <% @products.find(:category => cat, :limit => 3, :order => "RAND()").each do |pro| %>
+  <% # @products.find(:category => cat, :limit => 3, :order => "RAND()").each do |pro| %>
+  <% Product.random_pros(cat).each do |pro|%>
     
       <p> <%= pro.title %></p>
     

@@ -1,5 +1,13 @@
 RWDFinal::Application.routes.draw do
   
+  post "/login" => 'admin_auth#login'
+  
+  get "/login" => 'admin_auth#login'
+
+  get "/logout" => 'admin_auth#logout'
+
+  resources :admins
+
   root :to => 'public#index'
   
   resources :products

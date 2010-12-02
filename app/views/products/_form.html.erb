@@ -13,7 +13,8 @@
 
   <div class="field">
     <%= f.label :title %><br />
-    <%= f.text_field :
+    <%= f.text_field :title %>
+  </div>
   <div class="field">
     <%= f.label :category %><br />
     <%= select(:product, :category, Product.getCategories) %>

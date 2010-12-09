@@ -14,27 +14,19 @@
     <% @categories.each do |cat| %>
     <h2><%= cat %></h2>
     <p class="view-more">View More</p>
-    <% # @products.find(:category => cat, :limit => 3, :order => "RAND()").each do |pro| %>
-    <% Product.random_pros(cat).each do |pro|%>
     <ul>
-      <li>
+    <% # @products.find(:category => cat, :limit => 3, :order => "RAND()").each do |pro| %>
+    <% Product.random_pros(cat).each do |pro, i = 0|%>
+    <% i = i + 1%>
+    <%= debug(i)%>
+      <li <%= 'class="last"' if i == (Product.random_pros(cat).size - 1) %> >
         <img src="#"/>
         <p class="home-prod-title"><%= pro.title %></p>
         <p class="home-prod-price">$35</p>
+        <%= image_tag "products/" + pro.get_thumb %>
       </li>
-      <li>
-        <img src="#"/>
-        <p class="home-prod-title"><%= pro.title %></p>
-        <p class="home-prod-price">$35</p>
-      </li>
-      <li class="last">
-        <img src="#"/>
-        <p class="home-prod-title"><%= pro.title %></p>
-        <p class="home-prod-price">$35</p>
-      </li>
-    </ul>
-  
   <% end %>
+  </ul>
 <% end %>
 </div>
   <div id="footer">

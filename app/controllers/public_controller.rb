@@ -1,7 +1,8 @@
 class PublicController < ApplicationController
+
   def index
     @products = Product.all
-    @categories = Product.getCategories
+    @categories = Category.all
   end
 
   def category

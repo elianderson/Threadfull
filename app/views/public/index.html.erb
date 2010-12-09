@@ -12,18 +12,18 @@
   </div>
   <div class="cat cat-home">
     <% @categories.each do |cat| %>
-    <h2><%= cat %></h2>
+    <h2><%= cat.name %></h2>
     <p class="view-more">View More</p>
     <ul>
     <% # @products.find(:category => cat, :limit => 3, :order => "RAND()").each do |pro| %>
-    <% Product.random_pros(cat).each do |pro, i = 0|%>
-    <% i = i + 1%>
-    <%= debug(i)%>
-      <li <%= 'class="last"' if i == (Product.random_pros(cat).size - 1) %> >
+    <% products = cat.products %>
+    <% products.each do |product|%>
+      <li class=" <%= 'last' if product.id == products.last.id %> ">
+        
         <img src="#"/>
-        <p class="home-prod-title"><%= pro.title %></p>
+        <p class="home-prod-title"><%= product.title %></p>
         <p class="home-prod-price">$35</p>
-        <%= image_tag "products/" + pro.get_thumb %>
+        <%= image_tag "products/" + product.get_thumb %>
       </li>
   <% end %>
   </ul>

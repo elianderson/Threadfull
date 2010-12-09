@@ -1,0 +1,195 @@
+/*---Reset Start --*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;
+	font-weight: inherit;
+	font-style: inherit;
+	font-size: 100%;
+	font-family: inherit;
+	vertical-align: baseline;
+}
+/* remember to define focus styles! */
+:focus {
+	outline: 0;
+}
+body {
+	line-height: 1;
+	color: black;
+	background: white;
+}
+ol, ul {
+	list-style: none;
+}
+/* tables still need 'cellspacing="0"' in the markup */
+table {
+	border-collapse: separate;
+	border-spacing: 0;
+}
+caption, th, td {
+	text-align: left;
+	font-weight: normal;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: "";
+}
+blockquote, q {
+	quotes: "" "";
+}
+
+
+
+
+/*---Reset End --*/
+
+body {
+background:#ecf3f9;
+}
+h1 {
+
+}
+h2, h2 a {
+color:#1b325f;
+}
+#top-bar {
+width:100%;
+height:30px;
+background:#666;
+}
+#wrapper {
+width:940px;
+padding:20px;
+background:white;
+margin:0 auto;
+overflow:hidden;
+}
+#header {
+width:940px;
+height:125px;
+}
+#header h1 {
+float:left;
+font-size:18px;
+}
+ul#main-nav li {
+float:left;
+}
+.cat {
+width:940px;
+overflow:hidden;
+border-top:5px solid #b1d3ee;
+margin-bottom:30px;
+}
+.cat h2 {
+float:left;
+}
+.cat p.view-more {
+float:right;
+}
+.cat ul {
+clear:both;
+}
+.cat ul li.last {
+margin-right:0;
+}
+.cat-home li {
+width:300px;
+float:left;
+overflow:hidden;
+margin-right:20px;
+}
+.cat-home li img {
+width:300px;
+height:330px;
+}
+.cat-cat li {
+width:220px;
+float:left;
+overflow:hidden;
+margin-right:20px;
+}
+.cat-cat li img {
+width:220px;
+height:242px;
+}
+/*---Product Page ----*/
+#prod {
+width:940px;
+}
+#prod img.main {
+float:left;
+margin-bottom:50px;
+
+}
+#prod-info {
+width:465px;
+float:right;
+}
+#prod-info h2{
+border-top:5px solid #EEE;
+border-bottom:5px solid #EEE;
+font-size:20px;
+padding:10px 0;
+}
+#prod-extra {
+float:left;
+width:455px;
+clear:left;
+border-top:5px solid #EEE;
+padding:10px 0;
+}
+#prod-extra li {
+width:139px;
+overflow:hidden;
+margin-right:19px;
+float:left;
+}
+#prod-extra li img {
+width:139px;
+height:160px;
+}
+#prod-extra ul li.last {
+margin-right:0;
+}
+#share-links {
+margin-top:20px;
+float:right;
+width:443px;
+background:#ecf3f9;
+border:1px solid #b1d3ee;
+padding:10px;
+}
+#comments {
+margin-top:20px;
+float:right;
+width:453px;
+border-left:1px solid #ccc;
+padding-left:10px;
+}
+/*---footer ----*/
+#footer {
+clear:both;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+

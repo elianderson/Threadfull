@@ -4,11 +4,9 @@
     <p class="view-more">View More</p>
     <ul>
     <% # @products.find(:category => cat, :limit => 3, :order => "RAND()").each do |pro| %>
-    <% products = cat.products %>
+    <% products = cat.products.limit(3) %>
     <% products.each do |product|%>
       <li class=" <%= 'last' if product.id == products.last.id %> ">
-        
-        <img src="#"/>
         <p class="home-prod-title"><%= product.title %></p>
         <p class="home-prod-price">$35</p>
         <%= image_tag "products/" + product.get_thumb %>
@@ -16,23 +14,4 @@
   <% end %>
   </ul>
 <% end %>
-</div>
-  <div id="footer">
-    <div id="footer-fb">
-      <p id ="like-fb">Like Threadful on Facebook</p>
-      <p id ="text-fb">We like you! You shouljd like us on Facebook for exlcusie offers and awesome awesomeness</p>
-    </div>
-    <ul id="foot-nav">
-      <li><a href="#">Shop</a></li>
-      <li><a href="#">Participate</a></li>
-      <li><a href="#">Community</a></li>
-      <li><a href="#">Info</a></li>
-      <li><a href="#">Retail</a></li>
-    </ul>
-    <ul id="social-nav">
-      <li><a href="#">Twitter</a></li>
-      <li><a href="#">Facebook</a></li>
-      <li><a href="#">RSS</a></li>
-    </ul>
-  </div>
 </div>

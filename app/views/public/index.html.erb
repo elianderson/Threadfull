@@ -1,6 +1,6 @@
   <div class="cat cat-home">
     <% @categories.each do |cat| %>
-    <h2><a href="/<%= cat.url %>" ><%= cat.name %></a></h2>
+    <h2><a href="<%= cat.url %>" ><%= cat.name %></a></h2>
     <p class="view-more"><a href="/<%= cat.url %>">View More</a></p>
     <ul>
     <% # @products.find(:category => cat, :limit => 3, :order => "RAND()").each do |pro| %>

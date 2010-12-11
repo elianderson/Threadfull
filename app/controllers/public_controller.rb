@@ -7,12 +7,14 @@ class PublicController < ApplicationController
 
   def category
     @category = params[:category]
+    @category_name = (params[:category]).to_s.gsub('-', ' ')
     @products = Product.where(:category => @category)
   end
 
   def product
     pro = params[:product]
     @category = params[:category]
+    @category_name = (params[:category]).to_s.gsub('-', ' ')
     @product = Product.where(:category => @category,:id => pro).first()
   end
 

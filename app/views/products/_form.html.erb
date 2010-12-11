@@ -21,7 +21,7 @@
   </div>
   <div class="field">
     <%= f.label :category %><br />
-    <%= select(:product, :category, Category.all, :name) %>
+    <%= collection_select(:product, :category, Category.all, :url, :name) %>
   </div>
   <div class="field">
     <%= f.label :desc_short %><br />

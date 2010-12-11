@@ -28,9 +28,9 @@
     <h1>Threadful</h1>
     <ul id="main-nav">
       <li><a href="/">Home</a></li>
-      <li><a href="/Under-50">Under $50</a></li>
-      <li><a href="/Northwest-Rugged">Northwest Rugged</a></li>
-      <li><a href="/Cool-Stuff">Cool Stuff</a></li>
+      <% @categories.each do |cat| %>
+        <li><a href="<%= cat.url %>"><%= cat.name %></a></li>
+      <% end %>
     </ul>
   </div>
 <%= yield %>

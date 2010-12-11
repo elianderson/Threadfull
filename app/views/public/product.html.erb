@@ -3,7 +3,7 @@
     <div id="prod-info" />
       <h2><%= @product.title %></h2>
       <p id="prod-price">$<%= @product.price / 100 %></p>
-      <p><%= @product.desc_short %></p>
+      <p><%= @product.description %></p>
       <a id="buy-button" href="<%= @product.link %>">Buy it</a>
   </div>
   <div id="share-links">
@@ -15,24 +15,4 @@
   <div id="comments">
     <script src="http://connect.facebook.net/en_US/all.js#appId=132585060131786&amp;xfbml=1"></script>
     <fb:comments numposts="10" width="425" publish_feed="true"></fb:comments>
-  </div>
-  <div id="prod-extra">
-  <h3>You Also Might Like</h3>
-  <ul>
-    <li>
-    <img src="#"/>
-        <p class="home-prod-title">Test Title</p>
-        <p class="home-prod-price">$35</p>
-    </li>
-    <li>
-    <img src="#"/>
-        <p class="home-prod-title">Test Title</p>
-        <p class="home-prod-price">$35</p>
-    </li>
-    <li class="last">
-    <img src="#"/>
-        <p class="home-prod-title">Test Title</p>
-        <p class="home-prod-price">$35</p>
-    </li>
-  </ul>
   </div>

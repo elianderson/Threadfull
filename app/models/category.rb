@@ -2,15 +2,16 @@ class Category
   
   CATS = ['Under-50', 'Northwest-Rugged','Cool-Stuff' ] 
   
-  attr_accessor :name, :url
+  attr_accessor :name, :url, :raw
   
   def initialize(name)
-    @name = name
-    @url = name
+    @name = name.gsub('-', ' ')
+    @url = '/'+name
+    @raw = name
   end
   
   def products(amount = 3)
-    Product.where(:category => self.name).limit(amount).order(:id)
+    Product.where(:category => self.raw).limit(amount).order(:id)
   end
         
   # Static      

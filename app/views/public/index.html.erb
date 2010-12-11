@@ -1,13 +1,13 @@
   <div class="cat cat-home">
     <% @categories.each do |cat| %>
-    <h2><a href="/<%= cat.name%>"><%= cat.name %></a></h2>
-    <p class="view-more"><a href="/<%= cat.name%>">View More</a></p>
+    <h2><a href="/<%= cat.url %>" ><%= cat.name %></a></h2>
+    <p class="view-more"><a href="/<%= cat.url %>">View More</a></p>
     <ul>
     <% # @products.find(:category => cat, :limit => 3, :order => "RAND()").each do |pro| %>
     <% products = cat.products.limit(3) %>
     <% products.each do |product|%>
       <li class=" <%= 'last' if product.id == products.last.id %> ">
-        <a href="<%= cat.name+'/'+product.id.to_s %>">
+        <a href="<%= cat.url+'/'+product.id.to_s %>">
           <%= image_tag "products/" + product.get_thumb %>
           <p class="home-prod-title"><%= product.title %></p>
         </a>

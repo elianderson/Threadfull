@@ -20,7 +20,39 @@
   <%= csrf_meta_tag %>
 </head>
 <body>
-<%= yield %>
+<div id="top-bar">
 
+</div>
+<div id="wrapper">
+  <div id="header">
+    <h1>Threadful</h1>
+    <ul id="main-nav">
+      <li><a href="#">Home</a></li>
+      <li><a href="#">Under $50</a></li>
+      <li><a href="#">Northwest Rugged</a></li>
+      <li><a href="#">Cool Stuff</a></li>
+    </ul>
+  </div>
+<%= yield %>
+  <div id="footer">
+    <div id="footer-fb">
+      <a href="#"><img src="images/facebook_like.png"/></a>
+      <p id ="like-fb">Threadful on Facebook</p>
+      <p id ="text-fb">We like you! You shouljd like us on Facebook for exlcusive offers and awesome awesomeness!</p>
+    </div>
+    <ul id="foot-nav">
+      <li><a href="#">Shop</a></li>
+      <li><a href="#">Participate</a></li>
+      <li><a href="#">Community</a></li>
+      <li><a href="#">Info</a></li>
+      <li><a href="#">Retail</a></li>
+    </ul>
+    <ul id="social-nav">
+      <li><a href="#"><img src="images/footer_twitter.png"/>Twitter</a></li>
+      <li><a href="#"><img src="images/footer_facebook.png"/>Facebook</a></li>
+      <li><a href="#"><img src="images/footer_rss.png"/>RSS</a></li>
+    </ul>
+  </div>
+</div>
 </body>
 </html>

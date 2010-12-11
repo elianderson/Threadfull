@@ -1,8 +1,14 @@
-<h1>Public#category</h1>
-<p>Find me in app/views/public/category.html.erb</p>
+  <div class="cat cat-cat">
+    <h2><%= @category%></h2>
+    <ul>
+     <% @products.each_with_index do |product, index| %> 
+      <li class="<%= 'last' if index == 3 || index == 7 || index == 11  %>">
+        <%= index %>
+        <%= image_tag "products/" + product.get_thumb %>
+        <p class="home-prod-title"><%= product.title%></p>
+        <p class="home-prod-price"><%= product.price%></p>
+      </li>
+      <% end %>
+    </ul>
+  </div>
 
-<ul>
-<% @products.each do |product| %>
-  <li><%= product.title %></li>
-<% end %>
-</ul>

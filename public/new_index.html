@@ -1,7 +1,9 @@
 <!DOCTYPE html>
 <html>
 <head>
-<link rel="stylesheet" href="styles.css" type="text/css" />
+<link rel="stylesheet" href="stylesheets/styles.css" type="text/css" />
+<link href='http://fonts.googleapis.com/css?family=Droid+Sans&subset=latin' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Droid+Serif&subset=latin' rel='stylesheet' type='text/css'>
 <title></title>
 <script type="text/javascript">
 
@@ -19,99 +21,78 @@
 </head>
 <body>
 <div id="top-bar">
+
 </div>
 <div id="wrapper">
-	<div id="header">
-		<h1>Threadful</h1>
-		<ul id="main-nav">
-			<li><a href="#">Home</a></li>
-			<li><a href="#">Under $50</a></li>
-			<li><a href="#">Northwest Rugged</a></li>
-			<li><a href="#">Cool Stuff</a></li>
-		</ul>
-	</div>
-	<div class="cat cat-home">
-		<h2>Under $50</h2>
-		<p class="view-more">View More</p>
-		<ul>
-			<li>
-				<img src="#"/>
-				<p class="home-prod-title">Test Title</p>
-				<p class="home-prod-price">$35</p>
-			</li>
-			<li>
-				<img src="#"/>
-				<p class="home-prod-title">Test Title</p>
-				<p class="home-prod-price">$35</p>
-			</li>
-			<li class="last">
-				<img src="#"/>
-				<p class="home-prod-title">Test Title</p>
-				<p class="home-prod-price">$35</p>
-			</li>
-		</ul>
-	</div>
-	<div class="cat cat-home">
-		<h2>Northwest Rugged</h2>
-		<p class="view-more">View More</p>
-		<ul>
-			<li>
-				<img src="#"/>
-				<p class="home-prod-title">Test Title</p>
-				<p class="home-prod-price">$35</p>
-			</li>
-			<li>
-				<img src="#"/>
-				<p class="home-prod-title">Test Title</p>
-				<p class="home-prod-price">$35</p>
-			</li>
-			<li class="last">
-				<img src="#"/>
-				<p class="home-prod-title">Test Title</p>
-				<p class="home-prod-price">$35</p>
-			</li>
-		</ul>
-	</div>
-	<div class="cat cat-home">
-		<h2>Cool Stuff</h2>
-		<p class="view-more">View More</p>
-		<ul>
-			<li>
-				<img src="#"/>
-				<p class="home-prod-title">Test Title</p>
-				<p class="home-prod-price">$35</p>
-			</li>
-			<li>
-				<img src="#"/>
-				<p class="home-prod-title">Test Title</p>
-				<p class="home-prod-price">$35</p>
-			</li>
-			<li class="last">
-				<img src="#"/>
-				<p class="home-prod-title">Test Title</p>
-				<p class="home-prod-price">$35</p>
-			</li>
-		</ul>
-	</div>
-	<div id="footer">
-		<div id="footer-fb">
-			<p id ="like-fb">Like Threadful on Facebook</p>
-			<p id ="text-fb">We like you! You shouljd like us on Facebook for exlcusie offers and awesome awesomeness</p>
-		</div>
-		<ul id="foot-nav">
-			<li><a href="#">Shop</a></li>
-			<li><a href="#">Participate</a></li>
-			<li><a href="#">Community</a></li>
-			<li><a href="#">Info</a></li>
-			<li><a href="#">Retail</a></li>
-		</ul>
-		<ul id="social-nav">
-			<li><a href="#">Twitter</a></li>
-			<li><a href="#">Facebook</a></li>
-			<li><a href="#">RSS</a></li>
-		</ul>
-	</div>
-</div>
+  <div id="header">
+    <h1>Threadful</h1>
+    <ul id="main-nav">
+      <li><a href="#">Home</a></li>
+      <li><a href="#">Under $50</a></li>
+      <li><a href="#">Northwest Rugged</a></li>
+      <li><a href="#">Cool Stuff</a></li>
+    </ul>
+  </div>
+  <div id="prod">
+    <img class="main" src="#" width="455" height="500"/>
+    <div id="prod-info" />
+      <h2>Product name</h2>
+      <p id="prod-price">$75</p>
+      <p>Product Description</p>
+      <a id="buy-button" href="#">Buy it</a>
+  </div>
+  <div id="share-links">
+    <script src="http://connect.facebook.net/en_US/all.js#xfbml=1"></script>
+      <fb:like href="http://threadfull.rubypdx.com/" show_faces="false" width="450" font="arial"></fb:like>
+    <a href="http://twitter.com/share" class="twitter-share-button" data-count="horizontal">Tweet</a>
+      <script type="text/javascript" src="http://platform.twitter.com/widgets.js"></script>
+  </div>
+  <div id="comments">
+    <script src="http://connect.facebook.net/en_US/all.js#appId=132585060131786&amp;xfbml=1"></script>
+    <fb:comments numposts="10" width="425" publish_feed="true"></fb:comments>
+  </div>
+  <div id="prod-extra">
+  <h3>You Also Might Like</h3>
+  <ul>
+    <li>
+    <img src="#"/>
+        <p class="home-prod-title">Test Title</p>
+        <p class="home-prod-price">$35</p>
+    </li>
+    <li>
+    <img src="#"/>
+        <p class="home-prod-title">Test Title</p>
+        <p class="home-prod-price">$35</p>
+    </li>
+    <li class="last">
+    <img src="#"/>
+        <p class="home-prod-title">Test Title</p>
+        <p class="home-prod-price">$35</p>
+    </li>
+  </ul>
+  </div>
+  
+  
+  <div id="footer">
+    <div id="footer-fb">
+      <a href="#"><img src="images/facebook_like.png"/></a>
+      <p id ="like-fb">Threadful on Facebook</p>
+      <p id ="text-fb">We like you! You shouljd like us on Facebook for exlcusive offers and awesome awesomeness!</p>
+    </div>
+    <ul id="foot-nav">
+      <li><a href="#">Shop</a></li>
+      <li><a href="#">Participate</a></li>
+      <li><a href="#">Community</a></li>
+      <li><a href="#">Info</a></li>
+      <li><a href="#">Retail</a></li>
+    </ul>
+    <ul id="social-nav">
+      <li><a href="#"><img src="images/footer_twitter.png"/>Twitter</a></li>
+      <li><a href="#"><img src="images/footer_facebook.png"/>Facebook</a></li>
+      <li><a href="#"><img src="images/footer_rss.png"/>RSS</a></li>
+    </ul>
+  </div>
 
+</div>
 </body>
 </html>

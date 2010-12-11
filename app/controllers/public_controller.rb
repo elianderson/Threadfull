@@ -6,8 +6,8 @@ class PublicController < ApplicationController
   end
 
   def category
-    category = params[:category]
-    @products = Product.where(:category => category)
+    @category = params[:category]
+    @products = Product.where(:category => @category)
   end
 
   def product

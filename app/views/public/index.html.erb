@@ -1,15 +1,17 @@
   <div class="cat cat-home">
     <% @categories.each do |cat| %>
-    <h2><%= cat.name %></h2>
-    <p class="view-more">View More</p>
+    <h2><a href="/<%= cat.name%>"><%= cat.name %></a></h2>
+    <p class="view-more"><a href="/<%= cat.name%>">View More</a></p>
     <ul>
     <% # @products.find(:category => cat, :limit => 3, :order => "RAND()").each do |pro| %>
     <% products = cat.products.limit(3) %>
     <% products.each do |product|%>
       <li class=" <%= 'last' if product.id == products.last.id %> ">
-        <p class="home-prod-title"><%= product.title %></p>
-        <p class="home-prod-price">$35</p>
-        <%= image_tag "products/" + product.get_thumb %>
+        <a href="<%= cat.name+'/'+product.id.to_s %>">
+          <%= image_tag "products/" + product.get_thumb %>
+          <p class="home-prod-title"><%= product.title %></p>
+        </a>
+        <p class="home-prod-price">$<%= (product.price)/100 %></p>
       </li>
   <% end %>
   </ul>

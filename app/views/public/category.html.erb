@@ -2,11 +2,12 @@
     <h2><%= @category%></h2>
     <ul>
      <% @products.each_with_index do |product, index| %> 
-      <li class="<%= 'last' if index == 3 || index == 7 || index == 11  %>">
-        <%= index %>
-        <%= image_tag "products/" + product.get_thumb %>
-        <p class="home-prod-title"><%= product.title%></p>
-        <p class="home-prod-price"><%= product.price%></p>
+      <li class="<%= 'last' if (index+1).modulo(4) == 0 %>">
+        <a href="/<%= @category+'/'+product.id.to_s%>">
+          <%= image_tag "products/" + product.get_thumb %>
+          <p class="home-prod-title"><%= product.title%></p>
+        </a>
+        <p class="home-prod-price">$<%= product.price/100 %></p>
       </li>
       <% end %>
     </ul>

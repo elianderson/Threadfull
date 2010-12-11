@@ -1,4 +1,4 @@
-<h1>Public#product</h1>
+<!-- <h1>Public#product</h1>
 <p>Find me in app/views/public/product.html.erb</p>
 <p id="notice"><%= notice %></p>
 
@@ -34,4 +34,44 @@
 </script><fb:comments numposts="10" width="425" publish_feed="true"></fb:comments>
 
 <a href="http://twitter.com/share" class="twitter-share-button" data-count="horizontal">Tweet</a>
-<script type="text/javascript" src="http://platform.twitter.com/widgets.js"></script>
+<script type="text/javascript" src="http://platform.twitter.com/widgets.js"></script> -->
+
+<div id="prod">
+    
+      <%= image_tag "products/" + @product.get_thumb, :class => "main", :size => "455x500" %>
+    <div id="prod-info" />
+      <h2><%= @product.title %></h2>
+      <p id="prod-price">$<%= @product.price / 100 %></p>
+      <p><%= @product.desc_short %></p>
+      <a id="buy-button" href="<%= @product.link %>">Buy it</a>
+  </div>
+  <div id="share-links">
+    <script src="http://connect.facebook.net/en_US/all.js#xfbml=1"></script>
+      <fb:like href="http://threadfull.rubypdx.com/" show_faces="false" width="450" font="arial"></fb:like>
+    <a href="http://twitter.com/share" class="twitter-share-button" data-count="horizontal">Tweet</a>
+      <script type="text/javascript" src="http://platform.twitter.com/widgets.js"></script>
+  </div>
+  <div id="comments">
+    <script src="http://connect.facebook.net/en_US/all.js#appId=132585060131786&amp;xfbml=1"></script>
+    <fb:comments numposts="10" width="425" publish_feed="true"></fb:comments>
+  </div>
+  <div id="prod-extra">
+  <h3>You Also Might Like</h3>
+  <ul>
+    <li>
+    <img src="#"/>
+        <p class="home-prod-title">Test Title</p>
+        <p class="home-prod-price">$35</p>
+    </li>
+    <li>
+    <img src="#"/>
+        <p class="home-prod-title">Test Title</p>
+        <p class="home-prod-price">$35</p>
+    </li>
+    <li class="last">
+    <img src="#"/>
+        <p class="home-prod-title">Test Title</p>
+        <p class="home-prod-price">$35</p>
+    </li>
+  </ul>
+  </div>

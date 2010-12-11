@@ -12,8 +12,8 @@ class PublicController < ApplicationController
 
   def product
     pro = params[:product]
-    category = params[:category]
-    @product = Product.where(:category => category,:id => pro).first()
+    @category = params[:category]
+    @product = Product.where(:category => @category,:id => pro).first()
   end
 
   private

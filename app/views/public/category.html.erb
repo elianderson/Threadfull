@@ -1,5 +1,5 @@
   <div id="<%= @category %>" class="cat cat-cat">
-    <h2><%= @category_name %></h2>
+    <h2 id="cat-head"><%= @category_name %></h2>
     <ul>
      <% @products.each_with_index do |product, index| %> 
       <li class="<%= 'last' if (index+1).modulo(4) == 0 %>">

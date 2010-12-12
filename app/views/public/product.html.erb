@@ -21,7 +21,7 @@
     <ul>
         <% @related_products.each do |r_product| %>    
           <li>
-            <a id="buy-button" href="<%= r_product.link %>">
+            <a href="<%= r_product.link %>">
               <%= image_tag "products/" + r_product.thumbnail %>
               <p class="home-prod-title"><%= r_product.title %></p>
               <p class="home-prod-price">$<%= r_product.price / 100 %></p>

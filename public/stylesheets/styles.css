@@ -265,11 +265,12 @@ border-radius:10px;
 float:left;
 width:455px;
 clear:left;
-border-top:5px solid #EEE;
+border-top:5px solid #B1D3EE;
 padding:10px 0;
 }
 #prod-extra h3{
 margin-bottom:15px;
+color:#1B325F;
 }
 #prod-extra li {
 width:139px;

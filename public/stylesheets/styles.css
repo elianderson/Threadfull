@@ -54,7 +54,7 @@ blockquote, q {
 body {
 background:url(images/body_bg.png) repeat-x #ecf3f9;
 }
-h1 {
+h1 a {
 width:205px;
 height:69px;
 text-indent:-9999px;
@@ -66,7 +66,7 @@ color:#1b325f;
 font-family: 'Droid Serif', arial, serif;
 }
 h2 a:hover {
-color:#E11570;  
+color:#ea1e79;  
 }
 h3 {
 font-family: 'Droid Serif', arial, serif;
@@ -82,7 +82,7 @@ color:#085492;
 }
 a:hover {
 text-decoration:none;
-color:#E11570;
+color:#ea1e79;
 }
 img {
 -moz-border-radius:10px;
@@ -161,7 +161,7 @@ color:#3c89c8;
 }
 .home-prod-price {
 font-size:13px;
-color:#e11570;
+color:#ea1e79;
 font-style:oblique;
 line-height:13px;
 margin-bottom:20px;
@@ -234,7 +234,7 @@ margin-top:20px;
 }
 #prod-price {
 font-family: 'Droid Serif', arial, serif;
-color:#e11570;
+color:#ea1e79;
 float:right;
 margin-top:-35px;
 margin-right:10px;
@@ -249,11 +249,15 @@ font-size:20px;
 font-weight:bold;
 display:block;
 padding:15px 30px;
-background-color:#e11570;
+background-color:#ea1e79;
 overflow:hidden;
 -moz-border-radius:10px;
 -webkit-border-radius:10px;
 border-radius:10px;
+}
+a#buy-button:hover {
+  background:#da106a;
+  
 }
 #prod-info h2{
     border-bottom: 5px solid #EDF3F9;
@@ -382,7 +386,7 @@ a#rss-link {
   -webkit-border-radius:5px 5px 0 0;
   border-radius:5px 5px 0 0;
   margin-right:20px;
-  background:url(images/fb_icon_top.png) 10px 8px no-repeat #E11570;
+  background:url(images/fb_icon_top.png) 10px 8px no-repeat #ea1e79;
   overflow:hidden;
 }
 #top-bar-inner a#top-phrase {

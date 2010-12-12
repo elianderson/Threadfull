@@ -16,6 +16,7 @@ class PublicController < ApplicationController
     @category = params[:category]
     @category_name = (params[:category]).to_s.gsub('-', ' ')
     @product = Product.where(:category => @category,:id => pro).first()
+    @related_products = Product.where("category = ? and id != ?",@category, pro).limit(3)
   end
 
   private

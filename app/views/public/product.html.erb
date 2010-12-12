@@ -16,3 +16,17 @@
     <script src="http://connect.facebook.net/en_US/all.js#appId=132585060131786&amp;xfbml=1"></script>
     <fb:comments numposts="10" width="425" publish_feed="true"></fb:comments>
   </div>
+  <div id="prod-extra">
+    <h3>You Also Might Like</h3>
+    <ul>
+        <% @related_products.each do |r_product| %>    
+          <li>
+            <a id="buy-button" href="<%= r_product.link %>">
+              <%= image_tag "products/" + r_product.thumbnail %>
+              <p class="home-prod-title"><%= r_product.title %></p>
+              <p class="home-prod-price">$<%= r_product.price / 100 %></p>
+            </a>
+          </li>
+        <% end %>
+    </ul>
+  </div>

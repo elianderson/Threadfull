@@ -19,10 +19,9 @@
   <div id="prod-extra">
     <h3>You Also Might Like</h3>
     <ul>
-        
         <% @related_products.each do |r_product| %>    
           <li class=" <%= 'last' if r_product.id == @related_products.last.id %> ">
-            <a href="<%= r_product.link %>">
+            <a href="<%= '/'+r_product.category+'/'+r_product.id.to_s %>">
               <%= image_tag "products/" + r_product.thumbnail %>
               <p class="home-prod-title"><%= r_product.title %></p>
               <p class="home-prod-price">$<%= r_product.price / 100 %></p>

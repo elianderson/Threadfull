@@ -85,9 +85,7 @@ text-decoration:none;
 color:#ea1e79;
 }
 img {
--moz-border-radius:10px;
--webkit-border-radius:10px;
-border-radius:10px;
+border:1px solid #eee;
 }
 #top-bar {
 width:100%;
@@ -137,10 +135,11 @@ border-bottom:3px solid #999;
 width:940px;
 overflow:hidden;
 border-top:5px solid #b1d3ee;
-padding:15px 0;
+padding:0 0 15px 0;
 }
 .cat h2 {
 float:left;
+margin-top:2px;
 margin-bottom:15px;
 font-weight:bold;
 font-size:16px;
@@ -148,6 +147,7 @@ font-size:16px;
 
 .cat p.view-more {
 float:right;
+margin-top:10px;
 }
 .cat ul {
 clear:both;
@@ -180,18 +180,19 @@ overflow:hidden;
 margin-right:20px;
 }
 .cat-home li img {
-width:300px;
-height:330px;
+width:298px;
+height:328px;
 }
 .cat-cat li {
 width:220px;
 float:left;
 overflow:hidden;
 margin-right:20px;
+min-height:320px;
 }
 .cat-cat li img {
-width:220px;
-height:242px;
+width:218px;
+height:240px;
 }
 .cat-cat h2 {
   font-size:22px;
@@ -243,7 +244,7 @@ font-weight:bold;
 a#buy-button {
 font-family: 'Droid Serif', arial, serif;
 color:white;
-width:67px;
+width:102px;
 margin-top:20px;
 font-size:20px;
 font-weight:bold;
@@ -283,8 +284,8 @@ margin-right:19px;
 float:left;
 }
 #prod-extra li img {
-width:139px;
-height:160px;
+height: 158px;
+width: 137px;
 }
 #prod-extra ul li.last {
 margin-right:0;
@@ -324,7 +325,7 @@ padding-left:10px;
 	width:150px;
 	height:45px;
   text-indent:-9999px;
-	padding-right:15px;
+	padding-right:25px;
 	margin:5px 0px 5px 5px;
 	background:url(images/fb-button.jpg) no-repeat;
 	display:block;
@@ -353,10 +354,10 @@ padding-left:10px;
 }
 
 #social-nav{
-	font-size:70%;
-	clear:left;		
-	border-top:2px solid #cce4f8;
-	padding:5px;
+  clear: left;
+  float: right;
+  font-size: 70%;
+  padding: 5px;
 }
 
 #social-nav a{
@@ -406,10 +407,17 @@ a#rss-link {
   border:1px solid #999;
   overflow:hidden;
 }
+#top-bar-inner img {
+  border:none;
+}
 #top-bar-inner a#top-phrase:hover {
   color:white;
 }
-
+p#copyright {
+  font-size:12px;
+  margin-top:1px;
+  margin-left:5px;
+}
 
 
 

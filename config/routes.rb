@@ -5,6 +5,8 @@ RWDFinal::Application.routes.draw do
   get "/login" => 'admin_auth#login'
 
   get "/logout" => 'admin_auth#logout'
+  
+  match "/feed" => "public#feed"
 
   resources :admins
 

@@ -3,7 +3,7 @@
     <div id="prod-info" />
       <h2><%= @product.title %></h2>
       <p id="prod-price">$<%= @product.price / 100 %></p>
-      <p id="desc"><%= @product.description %></p>
+      <p id="desc"><%= truncate(@product.description, :length => 800) %></p>
       <a id="buy-button" href="<%= @product.link %>">Buy Now!</a>
   </div>
   <div id="share-links">

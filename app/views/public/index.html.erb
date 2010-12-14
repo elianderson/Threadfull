@@ -3,8 +3,8 @@
     <h2><a href="<%= cat.url %>" ><%= cat.name %></a></h2>
     <p class="view-more"><a href="<%= cat.url %>">View More</a></p>
     <ul>
-    <% # @products.find(:category => cat, :limit => 3, :order => "RAND()").each do |pro| %>
-    <% products = cat.products.limit(3) %>
+    <% #products = cat.products.limit(3) %>
+    <% products = Product.where(:category => cat.raw).order("random()").limit(3) %>
     <% products.each do |product|%>
       <li class=" <%= 'last' if product.id == products.last.id %> ">
         <a href="<%= cat.url+'/'+product.id.to_s %>">

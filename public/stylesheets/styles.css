@@ -426,7 +426,13 @@ p#copyright {
   margin-top:1px;
   margin-left:5px;
 }
-
+a#top-banner {
+  margin-bottom:30px;
+  display:block;
+}
+a#top-banner img:hover {
+  border:3px solid #DDD;
+}
 
 
 

@@ -299,12 +299,9 @@ width: 131px;
 margin-right:0;
 }
 #share-links {
-margin-top:20px;
-float:right;
-width:443px;
-background:#ecf3f9;
-border:1px solid #b1d3ee;
-padding:10px;
+margin-top:5px;
+margin-bottom:3px;
+
 }
 #comments {
 margin-top:20px;
@@ -312,7 +309,15 @@ float:right;
 width:453px;
 border-left:1px solid #ccc;
 padding-left:10px;
+
 }
+.wallkit_post .wallkit_postcontent {
+    -moz-border-radius: 5px 5px 5px 5px;
+    background: none repeat scroll 0 0 white;
+    margin-left: 60px;
+    padding: 10px;
+    background:#ecf3f9;
+  }
 /*---footer ----*/
 #footer {
 	clear:both;
@@ -329,7 +334,7 @@ padding-left:10px;
 	float:left;
 }	
 #like-fb a{
-	border-right:2px solid #cce4f8;	
+	border-right:2px solid #fff;	
 	width:150px;
 	height:45px;
   text-indent:-9999px;
@@ -347,8 +352,8 @@ padding-left:10px;
   width: 740px;
 }
 #footer-fb{
-	border-top:2px solid #cce4f8;
-	border-bottom:2px solid #cce4f8;
+	border-top:2px solid #fff;
+	border-bottom:2px solid #fff;
   
   }
 #foot-nav{
@@ -370,8 +375,8 @@ padding-left:10px;
 
 #social-nav a{
 	display:block;
-	padding:5px 0px 5px 17px;
-	margin-right:10px;
+	padding:5px 0px 5px 24px;
+	margin-right:12px;
 }
 a#twit-link {
   background:url(images/footer_twitter.png) no-repeat;
@@ -422,8 +427,8 @@ a#rss-link {
   color:white;
 }
 p#copyright {
-  font-size:12px;
-  margin-top:1px;
+  font-size:11px;
+  margin-top:3px;
   margin-left:5px;
 }
 a#top-banner {
@@ -433,7 +438,17 @@ a#top-banner {
 a#top-banner img:hover {
   border:3px solid #DDD;
 }
-
+#fb-like {
+  float:right;
+  margin-top:8px;
+  width:170px;
+  color:white !important;
+  margin-right:20px;
+ }
+.connect_widget td.connect_widget_vertical_center {
+   color:white !important; 
+   
+ }
 
 
 

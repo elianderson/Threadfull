@@ -6,13 +6,12 @@
       <p id="desc"><%= truncate(@product.description, :length => 800) %></p>
       <a id="buy-button" href="<%= @product.link %>">Buy Now!</a>
   </div>
-  <div id="share-links">
-    <script src="http://connect.facebook.net/en_US/all.js#xfbml=1"></script>
-      <fb:like href="http://threadfull.rubypdx.com/" show_faces="false" width="450" font="arial"></fb:like>
+  
+  <div id="comments">
+    <div id="share-links">
     <a href="http://twitter.com/share" class="twitter-share-button" data-count="horizontal">Tweet</a>
       <script type="text/javascript" src="http://platform.twitter.com/widgets.js"></script>
   </div>
-  <div id="comments">
     <script src="http://connect.facebook.net/en_US/all.js#appId=132585060131786&amp;xfbml=1"></script>
     <fb:comments numposts="10" width="425" publish_feed="true"></fb:comments>
   </div>

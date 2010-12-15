@@ -52,7 +52,7 @@ blockquote, q {
 /*---Reset End --*/
 
 body {
-background:url(images/threadfull_foot.jpg) bottom repeat-x white;
+background:url(images/body_bg.jpg) bottom repeat-x white;
 }
 h1 a {
 width:205px;
@@ -104,7 +104,7 @@ width:940px;
 padding:20px;
 
 margin:0 auto;
-overflow:hidden;
+overflow:visible;
 }
 #header {
 width:940px;
@@ -433,11 +433,13 @@ p#copyright {
 }
 a#top-banner {
   margin-bottom:30px;
+  margin-left:-148px;
   display:block;
 }
-a#top-banner img:hover {
-  border:3px solid #DDD;
+a#top-banner img {
+  border:none;
 }
+
 #fb-like {
   float:right;
   margin-top:8px;

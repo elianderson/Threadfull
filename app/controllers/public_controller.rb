@@ -6,9 +6,14 @@ class PublicController < ApplicationController
   end
 
   def category
-    @category = params[:category]
+    if (Category.check_category(params[:category]))
+      @category = params[:category]
+    else
+      redirect_to "/404.html"
+    end
+    # @category = params[:category]
     @category_name = (params[:category]).to_s.gsub('-', ' ')
-    @products = Product.where(:category => @category)
+    @products = Product.where(:category => @category).order("'updated_at' ASC")
   end
 
   def product
@@ -26,7 +31,9 @@ class PublicController < ApplicationController
       format.rss { render :xml => @products, :layout => false }
     end
   end
-
+  def error
+    
+  end
   private
   
   def load_categories

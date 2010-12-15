@@ -9,10 +9,17 @@
   <%= stylesheet_link_tag 'styles' %>
   <link href='http://fonts.googleapis.com/css?family=Droid+Sans&subset=latin' rel='stylesheet' type='text/css'>
   <link href='http://fonts.googleapis.com/css?family=Droid+Serif&subset=latin' rel='stylesheet' type='text/css'>
-  <%= javascript_include_tag :defaults %>
+  <%= javascript_include_tag 'jquery' %>
+  <script type="text/javascript">
+    $(function(){
+      $('.uiBoxGray').live().css('background', 'green');
+    })
+  </script>
   <%= csrf_meta_tag %>
 </head>
 <body>
+  <%= debug(params[:category])%>
+  <%= debug(Category.check_category(params[:category]))%>
 <div id="top-bar">
   <div id="top-bar-inner">
   <a href="/"><img src="/images/threadfull_tab.png" height="39" width="104" /></a>

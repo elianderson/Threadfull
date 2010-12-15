@@ -311,6 +311,9 @@ border-left:1px solid #ccc;
 padding-left:10px;
 
 }
+.uiBoxGray{
+  background-color: yellow;
+}
 .wallkit_post .wallkit_postcontent {
     -moz-border-radius: 5px 5px 5px 5px;
     background: none repeat scroll 0 0 white;

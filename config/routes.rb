@@ -1,5 +1,7 @@
 RWDFinal::Application.routes.draw do
   
+  match "/404.html" => "public#error"
+  
   post "/login" => 'admin_auth#login'
   
   get "/login" => 'admin_auth#login'
@@ -23,7 +25,7 @@ RWDFinal::Application.routes.draw do
   get "public/category"
 
   get "public/product"
-
+  
   # The priority is based upon order of creation:
   # first created -> highest priority.
 

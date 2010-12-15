@@ -16,7 +16,15 @@ class PublicController < ApplicationController
     @category = params[:category]
     @category_name = (params[:category]).to_s.gsub('-', ' ')
     @product = Product.where(:category => @category,:id => pro).first()
-    @related_products = Product.where("category = ? and id != ?",@category, pro).limit(3)
+    @related_products = Product.where("category = ? AND id != ?",@category, pro).order("random()").limit(3)
+  end
+
+  def feed
+    @products = Product.all
+    
+    respond_to do |format|
+      format.rss { render :xml => @products, :layout => false }
+    end
   end
 
   private
@@ -26,3 +34,4 @@ class PublicController < ApplicationController
   end
 
 end
+

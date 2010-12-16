@@ -13,7 +13,11 @@ class PublicController < ApplicationController
   def product
     pro = params[:product]
     @category_name = (params[:category]).to_s.gsub('-', ' ')
-    @product = Product.where(:category => @category,:id => pro).first()
+    if Product.where(:category => @category,:id => pro).first()
+      @product = Product.where(:category => @category,:id => pro).first()
+    else
+      redirect_to "/404.html"
+    end
     @related_products = Product.where("category = ? AND id != ?",@category, pro).order("random()").limit(3)
   end
 

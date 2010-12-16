@@ -2,7 +2,7 @@
       
     <div id="error-info"/>
       <h2>ERROR: 404</h2>
-      <h3>Oh no! Looks like this page doen't exist, quick <a href="/">go back to the home page</a> or check out one of these Rockin' products!</h3>
+      <h3>Oh no! Looks like this page doesn't exist, quick <a href="/">go back to the home page</a> or check out one of these Rockin' products!</h3>
   <ul class="cat-home">
 <% products = Product.order("random()").limit(3) %>
     <% products.each do |product|%>

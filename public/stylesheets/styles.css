@@ -220,7 +220,7 @@ height:234px;
 /*---Product Page ----*/
 #prod {
 width:940px;
-border-top:5px solid #b1d3ee;
+border-top:3px solid #b1d3ee;
 padding-top: 30px;
 }
 #prod img.main {
@@ -446,7 +446,6 @@ a#top-banner img {
 #fb-like {
   float:right;
   margin-top:8px;
-  width:170px;
   color:white !important;
   margin-right:20px;
  }

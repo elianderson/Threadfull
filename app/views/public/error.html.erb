@@ -1,0 +1,19 @@
+<div id="prod">
+      
+    <div id="error-info"/>
+      <h2>ERROR: 404</h2>
+      <h3>Oh no! Looks like this page doen't exist, quick <a href="/">go back to the home page</a> or check out one of these Rockin' products!</h3>
+  <ul class="cat-home">
+<% products = Product.order("random()").limit(3) %>
+    <% products.each do |product|%>
+      <li class="<%= 'last' if product.id == products.last.id %> ">
+        <a href="<%= product.category+'/'+product.id.to_s %>">
+          <%= image_tag "products/" + product.get_thumb %>
+          <p class="home-prod-title"><%= product.title %></p>
+        </a>
+        <p class="home-prod-price">$<%= (product.price)/100 %></p>
+      </li>
+  <% end %>
+  </ul>
+   </div>
+  </div>

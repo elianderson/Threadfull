@@ -5,7 +5,7 @@ class Category
   attr_accessor :name, :url, :raw
   
   def initialize(name)
-    @name = name.gsub('-', ' ')
+    @name = name.gsub('-', ' ').gsub(' 5', ' $5')
     @url = '/'+name
     @raw = name
   end
